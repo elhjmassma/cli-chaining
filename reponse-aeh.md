@@ -2,10 +2,7 @@
 
 ## Commande passée
 
-    grep "Batman" sets.csv \
-  | awk -F',' '{print "|" $3 " | " $2 " |"}' \
-  | sort -t'|' -k2,2n \
-  | uniq >> reponse-aeh.md
+    $ grep "Batman" sets.csv \ | awk -F',' '{print "|" $3 " | " $2 " |"}' \| sort -t'|' -k2,2n \| uniq >> reponse-aeh.md
 
 
 ## Résultat
